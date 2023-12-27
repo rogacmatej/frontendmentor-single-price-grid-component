@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+@font-face {
+  font-family: 'Karla';
+  src: url(../../public/assets/fonts/static/Karla-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url(../../public/assets/fonts/static/Karla-Regular.ttf)
+    format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Karla';
+    font-weight: 100 1000;
+    font-stretch: 75 100;
+    src: url(../../public/assets/fonts/Karla-VariableFont_wght.ttf)
+      format('truetype');
+    font-display: swap;
+  }
+}
+
+body {
+  font-family: $default-font;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  color: $color-primary-text;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.4rem;
+  }
+}
+
+p {
+  line-height: 2.6rem;
+  letter-spacing: -0.02rem;
+}
+
+p + p {
+  margin-top: 0.9rem;
+}

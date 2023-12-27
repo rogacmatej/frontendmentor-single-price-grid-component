@@ -1,0 +1,16 @@
+$grid-breakpoints: (
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$default-font: 'Karla', sans-serif;
+
+$color-bg: hsl(204, 43%, 93%);
+$color-primary-text: hsl(218, 22%, 67%);
+$color-primary: hsla(179, 62%, 43%, 1);
+$color-secondary: hsl(71, 73%, 54%);
+$color-tertiary: hsl(179, 48%, 52%);

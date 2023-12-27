@@ -1,0 +1,106 @@
+@use '../abstracts' as *;
+
+.price-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31.75rem, 1fr));
+  padding: 0;
+  overflow: hidden;
+
+  &__join {
+    padding: 4rem;
+    grid-column: 1 / -1;
+
+    .primary-heading {
+      margin-bottom: 2.4rem;
+    }
+
+    .secondary-heading {
+      margin-bottom: 1.1rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 2.8rem 2.4rem 3.2rem 2.4rem;
+
+      .primary-heading {
+        font-size: 2rem;
+        letter-spacing: -0.025rem;
+      }
+
+      .secondary-heading {
+        font-size: 1.5rem;
+        letter-spacing: -0.0187rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+
+  &__subscription {
+    padding: 4rem;
+    background-color: $color-primary;
+    color: #fff;
+
+    .secondary-heading {
+      color: #fff;
+      margin-bottom: 1.8rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 2.4rem;
+    }
+  }
+
+  &__why-us {
+    padding: 4rem;
+    background-color: $color-tertiary;
+    color: #fff;
+
+    .secondary-heading {
+      color: #fff;
+      margin-bottom: 1.8rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 2.4rem;
+    }
+  }
+}
+
+.subscription {
+  &__paragraph {
+    display: flex;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.04rem;
+    margin-right: 1.1rem;
+  }
+
+  &__period {
+    font-family: Karla;
+    font-weight: 400;
+    line-height: 2.6rem; /* 162.5% */
+    letter-spacing: -0.02rem;
+    opacity: 0.5;
+  }
+
+  &__info {
+    font-size: 1.6rem;
+  }
+
+  &__signup {
+    margin-top: 2.6rem;
+  }
+}
+
+.why-us {
+  &__list-item {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: -0.0175rem;
+    opacity: 0.75;
+  }
+}
